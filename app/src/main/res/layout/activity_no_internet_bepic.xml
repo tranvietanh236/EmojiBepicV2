@@ -19,22 +19,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="19dp"
-            android:layout_marginEnd="80dp"
-            android:layout_marginBottom="-2dp"
-            android:src="@drawable/img_polygon"
-            app:layout_constraintBottom_toTopOf="@id/llContent"
-            app:layout_constraintEnd_toEndOf="@id/llContent" />
-
         <LinearLayout
             android:id="@+id/llContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
-            android:layout_marginTop="-80dp"
-            android:background="@drawable/new_bober_white"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             android:paddingHorizontal="12dp"

@@ -28,21 +28,21 @@ class IntroBepicActivity : BaseActivity<IntroViewModel, ActivityIntroBepicNewBin
     override fun initView() {
         listIntroBepic.add(
             IntroModel(
-                R.drawable.img_intro_1,
+                R.drawable.intro1,
                 resources.getString(R.string.Welcome_to_Your_Emoji_Art),
                 resources.getString(R.string.Express_yourself_with_custom)
             )
         )
         listIntroBepic.add(
             IntroModel(
-                R.drawable.img_intro_2,
+                R.drawable.intro2,
                 resources.getString(R.string.Start_Your_Sticker_Journey),
                 resources.getString(R.string.Create_personalized_emojis)
             )
         )
         listIntroBepic.add(
             IntroModel(
-                R.drawable.img_intro_3,
+                R.drawable.intro3,
                 resources.getString(R.string.Sticker_and_Emoji_Joy),
                 resources.getString(R.string.Enjoy_making_unique_stickers)
             )
@@ -62,14 +62,14 @@ class IntroBepicActivity : BaseActivity<IntroViewModel, ActivityIntroBepicNewBin
                             addBottomDotsBepic(position)
                         }
                         binding.tvNext.text = resources.getString(R.string.continue_txt)
-                        binding.ivRowContinue.visibility = View.VISIBLE
+                        //binding.ivRowContinue.visibility = View.VISIBLE
                         EventTracking.logEvent(this@IntroBepicActivity, EventTracking.EVENT_NAME_ONBOARDING1_VIEW)
                     }
 
                     (listIntroBepic.size - 1) -> {
                         addBottomDotsBepic(position)
                         binding.tvNext.text = resources.getString(R.string.get_started)
-                        binding.ivRowContinue.visibility = View.GONE
+                        //binding.ivRowContinue.visibility = View.GONE
                         EventTracking.logEvent(this@IntroBepicActivity, EventTracking.EVENT_NAME_ONBOARDING3_VIEW)
                     }
 
@@ -77,7 +77,7 @@ class IntroBepicActivity : BaseActivity<IntroViewModel, ActivityIntroBepicNewBin
                         countBepic++
                         addBottomDotsBepic(position)
                         binding.tvNext.text = resources.getString(R.string.continue_txt)
-                        binding.ivRowContinue.visibility = View.VISIBLE
+                        //binding.ivRowContinue.visibility = View.VISIBLE
                         EventTracking.logEvent(this@IntroBepicActivity, EventTracking.EVENT_NAME_ONBOARDING2_VIEW)
                     }
                 }
@@ -126,17 +126,17 @@ class IntroBepicActivity : BaseActivity<IntroViewModel, ActivityIntroBepicNewBin
     private fun addBottomDotsBepic(currentPage: Int) {
         Log.d("VIET", "$currentPage")
         if (currentPage == 0) {
-            binding.dot1.setBackgroundResource(R.drawable.dot_select)
-            binding.dot2.setBackgroundResource(R.drawable.dot_not_select)
-            binding.dot3.setBackgroundResource(R.drawable.dot_not_select)
+            binding.dot1.setImageResource(R.drawable.dot_select)
+            binding.dot2.setImageResource(R.drawable.dot_not_select)
+            binding.dot3.setImageResource(R.drawable.dot_not_select)
         } else if (currentPage == 1) {
-            binding.dot1.setBackgroundResource(R.drawable.dot_not_select)
-            binding.dot2.setBackgroundResource(R.drawable.dot_select)
-            binding.dot3.setBackgroundResource(R.drawable.dot_not_select)
+            binding.dot1.setImageResource(R.drawable.dot_not_select)
+            binding.dot2.setImageResource(R.drawable.dot_select)
+            binding.dot3.setImageResource(R.drawable.dot_not_select)
         } else {
-            binding.dot1.setBackgroundResource(R.drawable.dot_not_select)
-            binding.dot2.setBackgroundResource(R.drawable.dot_not_select)
-            binding.dot3.setBackgroundResource(R.drawable.dot_select)
+            binding.dot1.setImageResource(R.drawable.dot_not_select)
+            binding.dot2.setImageResource(R.drawable.dot_not_select)
+            binding.dot3.setImageResource(R.drawable.dot_select)
         }
     }
 

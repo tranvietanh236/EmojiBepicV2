@@ -31,7 +31,7 @@ public abstract class FragmentHomeBepicBinding extends ViewDataBinding {
   public final ImageView ivClear;
 
   @NonNull
-  public final ImageView ivCreate;
+  public final ImageView ivTip;
 
   @NonNull
   public final ConstraintLayout linearNotFound;
@@ -49,6 +49,9 @@ public abstract class FragmentHomeBepicBinding extends ViewDataBinding {
   public final TextView tvContent;
 
   @NonNull
+  public final TextView tvCreate;
+
+  @NonNull
   public final TextView tvSuggest;
 
   @NonNull
@@ -58,19 +61,21 @@ public abstract class FragmentHomeBepicBinding extends ViewDataBinding {
   protected HomeViewModel mViewModel;
 
   protected FragmentHomeBepicBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      EditText edtSearch, ImageView imgGuide, ImageView ivClear, ImageView ivCreate,
+      EditText edtSearch, ImageView imgGuide, ImageView ivClear, ImageView ivTip,
       ConstraintLayout linearNotFound, LinearLayout llContent, LinearLayout rlCreate,
-      RecyclerView rvSuggest, TextView tvContent, TextView tvSuggest, TextView tvTile) {
+      RecyclerView rvSuggest, TextView tvContent, TextView tvCreate, TextView tvSuggest,
+      TextView tvTile) {
     super(_bindingComponent, _root, _localFieldCount);
     this.edtSearch = edtSearch;
     this.imgGuide = imgGuide;
     this.ivClear = ivClear;
-    this.ivCreate = ivCreate;
+    this.ivTip = ivTip;
     this.linearNotFound = linearNotFound;
     this.llContent = llContent;
     this.rlCreate = rlCreate;
     this.rvSuggest = rvSuggest;
     this.tvContent = tvContent;
+    this.tvCreate = tvCreate;
     this.tvSuggest = tvSuggest;
     this.tvTile = tvTile;
   }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -16,15 +16,32 @@
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
-        <TextView
-            android:layout_marginTop="16dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:gravity="center"
-            android:textColor="@color/color_1F1F29"
-            android:fontFamily="@font/urbanist_extra_bold"
-            android:textSize="24sp"
             android:layout_height="wrap_content"
-            android:text="@string/setting"/>
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/iv_tip"
+                android:src="@drawable/ic_tip"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textColor="@color/color_1F1F29"
+                android:fontFamily="@font/urbanist_extra_bold"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"
+                android:text="@string/setting"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         <LinearLayout
             android:layout_marginTop="16dp"
@@ -154,6 +171,37 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/ll_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_2sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_tip"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="tutorial"
+                    android:textColor="@color/color_1F1F29"
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/urbanist_semi_bold"
+                    android:layout_marginHorizontal="@dimen/_10sdp"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_chevron_right"/>
+
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -161,9 +209,13 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="77dp"
             android:gravity="center_horizontal">
 
+            <ImageView
+                android:src="@drawable/intro3"
+                android:layout_width="224dp"
+                android:layout_height="215dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

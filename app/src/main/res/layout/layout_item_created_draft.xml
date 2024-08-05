@@ -22,8 +22,8 @@
                 <ImageView
                     android:layout_centerVertical="true"
                     android:id="@+id/imgSticker"
-                    android:layout_width="78dp"
-                    android:layout_height="78dp"
+                    android:layout_width="114dp"
+                    android:layout_height="96dp"
                     android:layout_margin="@dimen/_12sdp"
                     android:src="@drawable/new_img_create"/>
 
@@ -42,9 +42,8 @@
                 android:layout_width="@dimen/_24sdp"
                 android:layout_height="@dimen/_24sdp"
                 android:src="@drawable/ic_edit"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/imgDelete"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
             <ImageView
                 android:id="@+id/imgDelete"
@@ -52,7 +51,6 @@
                 android:layout_height="@dimen/_24sdp"
                 android:src="@drawable/ic_trash"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imgEdit"
                 app:layout_constraintBottom_toBottomOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

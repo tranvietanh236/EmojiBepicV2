@@ -4,6 +4,7 @@ package com.app.friendschat.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,6 +18,9 @@ import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class FragmentMyCreationBepicBinding extends ViewDataBinding {
+  @NonNull
+  public final ImageView ivTip;
+
   @NonNull
   public final RelativeLayout rlDraftTab;
 
@@ -33,9 +37,10 @@ public abstract class FragmentMyCreationBepicBinding extends ViewDataBinding {
   protected MyCreationViewModel mViewModel;
 
   protected FragmentMyCreationBepicBinding(Object _bindingComponent, View _root,
-      int _localFieldCount, RelativeLayout rlDraftTab, RelativeLayout rlPackageTab,
+      int _localFieldCount, ImageView ivTip, RelativeLayout rlDraftTab, RelativeLayout rlPackageTab,
       MovableText tvDraft, MovableText tvPackage) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.ivTip = ivTip;
     this.rlDraftTab = rlDraftTab;
     this.rlPackageTab = rlPackageTab;
     this.tvDraft = tvDraft;

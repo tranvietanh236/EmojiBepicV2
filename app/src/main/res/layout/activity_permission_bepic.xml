@@ -35,27 +35,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="262dp"
                     android:layout_marginTop="25dp"
-                    android:src="@drawable/new_img_permission"
+                    android:src="@drawable/permission"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="19dp"
-                    android:layout_marginEnd="80dp"
-                    android:layout_marginBottom="-2dp"
-                    android:src="@drawable/img_polygon"
-                    app:layout_constraintBottom_toTopOf="@id/llContent"
-                    app:layout_constraintEnd_toEndOf="@id/llContent" />
 
                 <LinearLayout
                     android:id="@+id/llContent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="30dp"
-                    android:layout_marginTop="-80dp"
-                    android:background="@drawable/new_bober_white"
+
                     android:gravity="center_horizontal"
                     android:orientation="vertical"
                     android:paddingHorizontal="12dp"
@@ -154,7 +145,7 @@
                 android:gravity="center"
                 android:paddingHorizontal="@dimen/_10sdp"
                 android:text="@string/continue_txt"
-                android:textColor="@color/color_095467"
+                android:textColor="#444CE7"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent" />
 

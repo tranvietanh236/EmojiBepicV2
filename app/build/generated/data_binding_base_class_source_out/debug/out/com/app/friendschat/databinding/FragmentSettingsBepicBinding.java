@@ -4,6 +4,7 @@ package com.app.friendschat.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -18,6 +19,9 @@ import java.lang.Object;
 
 public abstract class FragmentSettingsBepicBinding extends ViewDataBinding {
   @NonNull
+  public final ImageView ivTip;
+
+  @NonNull
   public final LinearLayout llLanguage;
 
   @NonNull
@@ -30,19 +34,24 @@ public abstract class FragmentSettingsBepicBinding extends ViewDataBinding {
   public final LinearLayout llShare;
 
   @NonNull
+  public final LinearLayout llTip;
+
+  @NonNull
   public final TextView tvVersion;
 
   @Bindable
   protected SettingsViewModel mViewModel;
 
   protected FragmentSettingsBepicBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      LinearLayout llLanguage, LinearLayout llPrivacyPolicy, LinearLayout llRating,
-      LinearLayout llShare, TextView tvVersion) {
+      ImageView ivTip, LinearLayout llLanguage, LinearLayout llPrivacyPolicy, LinearLayout llRating,
+      LinearLayout llShare, LinearLayout llTip, TextView tvVersion) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.ivTip = ivTip;
     this.llLanguage = llLanguage;
     this.llPrivacyPolicy = llPrivacyPolicy;
     this.llRating = llRating;
     this.llShare = llShare;
+    this.llTip = llTip;
     this.tvVersion = tvVersion;
   }
 

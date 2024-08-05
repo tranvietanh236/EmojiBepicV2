@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -10,11 +11,39 @@
     </data>
 
     <LinearLayout
-        android:background="@drawable/bg_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/bg_main"
         android:orientation="vertical"
         android:paddingHorizontal="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/iv_tip"
+                android:src="@drawable/ic_tip"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/recoleta_bold"
+                android:gravity="center"
+                android:text="Funny Emoji"
+                android:textColor="#1F1F29"
+                android:textSize="@dimen/_20sdp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,22 +51,17 @@
             android:layout_marginTop="18dp"
             android:gravity="center_vertical">
 
-            <ImageView
-                android:layout_width="44dp"
-                android:layout_height="44dp"
-                android:src="@drawable/app_logo" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_36sdp"
-                android:layout_marginStart="16dp"
-                android:background="@drawable/border_bg_search_home"
+                android:background="@drawable/bg_search_white"
                 android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingHorizontal="@dimen/_12sdp">
+                android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="@dimen/_17sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_width="21dp"
                     android:layout_height="@dimen/_17sdp"
                     android:src="@drawable/ic_search_home" />
 
@@ -50,9 +74,11 @@
                     android:background="@null"
                     android:fontFamily="@font/urbanist_regular"
                     android:hint="@string/search"
-                    android:textColorHint="@color/color_667085" />
+                    android:textColorHint="@color/color_667085"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <ImageView
+                    android:layout_marginEnd="12dp"
                     android:id="@+id/iv_clear"
                     android:layout_width="@dimen/_17sdp"
                     android:layout_height="@dimen/_17sdp"
@@ -77,65 +103,63 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:background="@drawable/border_bg_create_home"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="16dp">
+                    android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/iv_create"
-                        android:layout_width="84dp"
-                        android:layout_height="84dp"
-                        android:src="@drawable/new_img_create" />
-
-                    <LinearLayout
+                    <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:orientation="vertical">
+                        android:layout_height="wrap_content">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/urbanist_bold"
-                            android:text="@string/Make_Your_Symbol"
-                            android:textColor="@color/white"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
-                            android:fontFamily="@font/urbanist_bold"
-                            android:text="@string/Express_Yourself"
-                            android:textColor="@color/white"
-                            android:textSize="16sp" />
-
-                        <LinearLayout
+                        <ImageView
                             android:layout_width="match_parent"
+                            android:layout_height="168dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/main_emoji"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/border_btn_create"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            android:paddingHorizontal="16dp"
-                            android:paddingVertical="10dp">
+                            android:layout_marginStart="@dimen/_24sdp"
+                            android:layout_marginTop="@dimen/_32sdp"
+                            android:fontFamily="@font/recoleta_bold"
+                            android:text="Make Your Symbol \n  Express Yourself"
+                            android:textColor="#0C111D"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="104dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="@dimen/_24sdp"
+                            android:layout_marginBottom="@dimen/_22sdp"
+                            android:background="@drawable/bg_border_create_btn"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
 
                             <TextView
+                                android:id="@+id/tv_create"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
                                 android:fontFamily="@font/urbanist_semi_bold"
-                                android:text="@string/Create"
-                                android:textColor="@color/color_0C111D"
-                                android:textSize="@dimen/_12ssp" />
+                                android:text="Create"
+                                android:textSize="14sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
 
                             <ImageView
-                                android:layout_width="@dimen/_17sdp"
-                                android:layout_height="@dimen/_17sdp"
-                                android:layout_marginStart="8dp"
-                                android:src="@drawable/ic_create_next" />
-                        </LinearLayout>
-                    </LinearLayout>
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12.6dp"
+                                android:src="@drawable/ic_next3"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/tv_create"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
                 </LinearLayout>
@@ -153,10 +177,11 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_suggest"
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_13sdp"
                     android:clipToPadding="false"
                     android:paddingBottom="100dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="@dimen/_13sdp" />
+                    tools:listitem="em"/>
 
             </LinearLayout>
 
@@ -192,8 +217,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="16dp"
-                    android:layout_marginTop="-65dp"
-                    android:background="@drawable/new_bober_white"
                     android:gravity="center_horizontal"
                     android:orientation="vertical"
                     android:paddingHorizontal="12dp"
@@ -209,7 +232,7 @@
                         android:gravity="center"
                         android:maxLines="2"
                         android:text="@string/no_results_founded"
-                        android:textColor="#F04438"
+                        android:textColor="@color/black"
                         android:textSize="@dimen/_16ssp" />
 
 

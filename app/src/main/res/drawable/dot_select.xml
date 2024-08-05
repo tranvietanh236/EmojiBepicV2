@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-    <solid android:color="@color/color_095467" />
-    <corners android:radius="90dp"/>
-</shape>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="8dp"
+    android:viewportWidth="20"
+    android:viewportHeight="8">
+    <path
+        android:fillColor="#FF444CE7"
+        android:pathData="M0 4c0-2.21 1.79-4 4-4h12c2.21 0 4 1.79 4 4v0c0 2.21-1.79 4-4 4h-12c-2.21 0-4-1.79-4-4z"/>
+</vector>

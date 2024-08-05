@@ -13,14 +13,13 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#D2E6F5"
+        android:background="@drawable/bg_main"
         android:orientation="vertical">
 
         <RelativeLayout
             android:id="@+id/rl_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#D2E6F5"
             android:paddingHorizontal="16dp"
             android:paddingVertical="12dp">
 
@@ -64,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@drawable/bg_main">
+            android:background="@color/black">
 
             <RelativeLayout
                 android:id="@+id/rl_emoji"
@@ -124,7 +123,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/rl_emoji"
                 android:layout_alignParentBottom="true"
-                android:background="#D2E6F5"
+                android:background="@color/white"
                 android:orientation="vertical">
 
                 <RelativeLayout

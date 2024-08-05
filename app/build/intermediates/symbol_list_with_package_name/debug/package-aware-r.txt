@@ -3504,6 +3504,7 @@ drawable below_shadow
 drawable bg_adding_to_telegram_button
 drawable bg_adding_to_whatsapp_button
 drawable bg_ads_icon
+drawable bg_border_create_btn
 drawable bg_bottom_sheet_drag_handler
 drawable bg_btn_ads
 drawable bg_btn_rate_us
@@ -3517,6 +3518,7 @@ drawable bg_main
 drawable bg_native
 drawable bg_navigation
 drawable bg_next
+drawable bg_search_white
 drawable bg_text_input_new_package
 drawable border_bg_buttom_sheet
 drawable border_bg_create
@@ -3580,6 +3582,7 @@ drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable compat_splash_screen
 drawable compat_splash_screen_no_icon_background
+drawable congulation
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3589,6 +3592,7 @@ drawable dot_not_select
 drawable dot_select
 drawable drop_shadow_rate_0
 drawable emoji_lang
+drawable emoji_main
 drawable fading_shadow
 drawable flag_de
 drawable flag_en
@@ -3603,6 +3607,7 @@ drawable ic_accessory
 drawable ic_accessory_select
 drawable ic_arrow_narrow_left
 drawable ic_back
+drawable ic_back_new
 drawable ic_background
 drawable ic_background_select
 drawable ic_beard
@@ -3671,6 +3676,8 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_my_creation
 drawable ic_my_creation_select
+drawable ic_next3
+drawable ic_next_2
 drawable ic_nose
 drawable ic_nose_select
 drawable ic_number_of_sticker
@@ -3695,6 +3702,7 @@ drawable ic_star
 drawable ic_start_ads
 drawable ic_swap
 drawable ic_telegram
+drawable ic_tip
 drawable ic_trash
 drawable ic_trash_01
 drawable ic_trash_dialog_add_to_package
@@ -3709,6 +3717,10 @@ drawable img_intro_1
 drawable img_intro_2
 drawable img_intro_3
 drawable img_polygon
+drawable img_rating
+drawable intro1
+drawable intro2
+drawable intro3
 drawable lang_em
 drawable logo_splash
 drawable m3_appbar_background
@@ -3719,6 +3731,7 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
+drawable main_emoji
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -3776,6 +3789,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable permission
 drawable permission_banner
 drawable photo_type_emoji
 drawable photo_type_sticker
@@ -3957,7 +3971,6 @@ id chronometer
 id circle_center
 id cl_header
 id cl_rate
-id cl_title
 id clear
 id clear_text
 id clip_horizontal
@@ -4006,9 +4019,9 @@ id disablePostScroll
 id disableScroll
 id disabled
 id disjoint
-id dot_1
-id dot_2
-id dot_3
+id dot1
+id dot2
+id dot3
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -4108,12 +4121,10 @@ id iv_back
 id iv_checked
 id iv_clear
 id iv_close
-id iv_create
 id iv_delete
 id iv_delete_emoji
 id iv_dots
 id iv_download
-id iv_earth
 id iv_flip_horizontal
 id iv_flip_vertical
 id iv_home
@@ -4135,6 +4146,7 @@ id iv_share
 id iv_show_layer
 id iv_sticker
 id iv_swap
+id iv_tip
 id iv_trash
 id iv_undo
 id jumpToEnd
@@ -4173,6 +4185,7 @@ id ll_privacy_policy
 id ll_rating
 id ll_share
 id ll_sticker
+id ll_tip
 id ll_watch_video
 id lottie_layer_name
 id main_container
@@ -4481,6 +4494,7 @@ id transition_transform
 id triangle
 id tvContent
 id tvDraft
+id tvNext
 id tvPackage
 id tvTile
 id tv_create
@@ -4635,7 +4649,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_edit_emoji_new
 layout activity_emoji_bepic_new
-layout activity_intro_bepic
+layout activity_intro_bepic_new
 layout activity_language_bepic
 layout activity_language_start_bepic
 layout activity_main_bepic

@@ -16,15 +16,32 @@
         android:orientation="vertical"
         android:paddingHorizontal="@dimen/_13sdp">
 
-        <TextView
-            android:layout_marginTop="16dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:gravity="center"
-            android:textColor="@color/color_1F1F29"
-            android:fontFamily="@font/urbanist_extra_bold"
-            android:textSize="24sp"
             android:layout_height="wrap_content"
-            android:text="@string/My_Creation"/>
+            android:layout_marginTop="16dp">
+
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textColor="@color/color_1F1F29"
+                android:fontFamily="@font/urbanist_extra_bold"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"
+                android:text="@string/My_Creation"/>
+
+            <ImageView
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/iv_tip"
+                android:src="@drawable/ic_tip"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         <LinearLayout
             android:layout_marginTop="16dp"

@@ -4,13 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:background="#D2E6F5"
+        android:background="@drawable/bg_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:background="#D2E6F5"
+            android:background="@drawable/bg_main"
             android:id="@+id/cl_header"
             android:layout_width="match_parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -112,7 +112,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/color_DCE7FF"
+                    android:background="@color/white"
                     android:padding="@dimen/_13sdp">
 
                     <include
